@@ -1,0 +1,211 @@
+# Assignment 2.3 — Div, Attributes & Clean Structure
+
+## Q1. Divide the page into Header, About, Education, Skills, and Contact sections.
+
+**Answer:**
+
+```html
+<div id="header">
+    <h1>Naman Pratap</h1>
+    <p>B.Tech Computer Science Student</p>
+</div>
+
+<div id="about">
+    <h2>About Me</h2>
+    <p>I am learning web development and programming.</p>
+</div>
+
+<div id="education">
+    <h2>Education</h2>
+    <p>I am pursuing B.Tech in Computer Science.</p>
+</div>
+
+<div id="skills">
+    <h2>Skills</h2>
+    <p>HTML, CSS, and Java.</p>
+</div>
+
+<div id="contact">
+    <h2>Contact</h2>
+    <p>Email: student@example.com</p>
+</div>
+```
+
+## Q2. Use div for containers.
+
+**Answer:**
+
+The `<div>` element is used to group related HTML elements into a container.
+
+Example:
+
+```html
+<div class="section">
+    <h2>About Me</h2>
+    <p>I am a Computer Science student.</p>
+</div>
+```
+
+## Q3. Give elements unique id and reusable class attributes.
+
+**Answer:**
+
+The `id` attribute uniquely identifies an element, while the `class` attribute can be reused for multiple elements.
+
+Example:
+
+```html
+<div id="about" class="section">
+    <h2>About Me</h2>
+</div>
+
+<div id="education" class="section">
+    <h2>Education</h2>
+</div>
+
+<div id="skills" class="section">
+    <h2>Skills</h2>
+</div>
+```
+
+Here, every section has a unique `id`, while the class `section` is reused.
+
+## Q4. Add a data-* custom attribute to any element.
+
+**Answer:**
+
+A `data-*` attribute stores custom information on an HTML element.
+
+Example:
+
+```html
+<div id="skills" class="section" data-category="technical">
+    <h2>My Skills</h2>
+    <p>HTML, CSS, and Java.</p>
+</div>
+```
+
+Here, `data-category="technical"` is a custom data attribute.
+
+## Q5. Update a text element and add new content.
+
+**Answer:**
+
+Updated text:
+
+```html
+<p id="intro-text">
+    I am a B.Tech Computer Science student who enjoys learning
+    web development, programming, and new technologies.
+</p>
+```
+
+New content:
+
+```html
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: student@example.com</p>
+    <p>Feel free to contact me for academic projects.</p>
+</div>
+```
+
+## Q6. Organize the HTML code with proper indentation and meaningful names.
+
+**Answer:**
+
+Proper indentation makes HTML code easier to read and maintain. Meaningful names such as `about`, `education`, and `contact` help developers understand the purpose of each section.
+
+Example:
+
+```html
+<div id="education" class="section">
+    <h2>Education</h2>
+    <p>B.Tech in Computer Science</p>
+</div>
+```
+
+## Q7. Write the complete HTML code for the updated introduction page.
+
+**Answer:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Pratap - Personal Introduction</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div id="header" class="section">
+        <h1>Naman Pratap</h1>
+        <p>B.Tech Computer Science Student</p>
+    </div>
+
+    <hr>
+
+    <!-- About Section -->
+    <div id="about" class="section" data-category="personal">
+        <h2>About Me</h2>
+        <p id="intro-text">
+            I am a B.Tech Computer Science student who enjoys learning
+            web development, programming, and new technologies.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Education Section -->
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <p>I am pursuing B.Tech in Computer Science.</p>
+        <p>My goal is to improve my technical knowledge and programming skills.</p>
+    </div>
+
+    <hr>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section" data-category="technical">
+        <h2>My Skills</h2>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Java</p>
+        <p>I am continuously learning new programming concepts.</p>
+    </div>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: student@example.com</p>
+        <p>Feel free to contact me for academic projects.</p>
+    </div>
+
+</body>
+
+</html>
+```
+
+## Q8. How do you run and verify the updated HTML page?
+
+**Answer:**
+
+1. Open Visual Studio Code.
+2. Create or open the `index.html` file.
+3. Paste the complete HTML code.
+4. Save the file using Ctrl + S.
+5. Right-click inside the editor and select **Open with Live Server**.
+6. Check that all five sections appear in the browser.
+7. Take a screenshot showing the webpage and its structure.
+
+## Q9. What is the conclusion of this assignment?
+
+**Answer:**
+
+In this assignment, I converted my personal introduction page into a structured HTML document. I created Header, About, Education, Skills, and Contact sections using div containers. I used unique IDs, reusable classes, and custom data attributes. I also updated the content and organized the code with proper indentation.
